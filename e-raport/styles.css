@@ -1,0 +1,43 @@
+header {
+  text-align: center;
+}
+
+header h1,
+h2,
+h3 {
+  margin: 0 auto;
+  padding: 5px;
+}
+
+section table {
+  text-align: center;
+  justify-content: center;
+  margin-top: 12px;
+  border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: black;
+  background-color: #f9f9f9;
+}
+
+section table th,
+section table td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.lulus {
+  color: rgb(0, 163, 76);
+}
+.tidak-lulus {
+  color: rgb(255, 0, 0);
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #555;
+}

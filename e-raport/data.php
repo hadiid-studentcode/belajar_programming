@@ -24,7 +24,7 @@ $data_siswa = [
     [
         "nama" => "Charlie Darmawan",
         "nilai" => [
-            "Matematika" => 92,
+            "Matematika" => 20,
             "Bahasa Indonesia" => 88,
             "Bahasa Inggris" => 95
         ]
@@ -34,8 +34,34 @@ $data_siswa = [
         "nilai" => [
             "Matematika" => 50,
             "Bahasa Indonesia" => 65,
-            "Bahasa Inggris" => 60
+            "Bahasa Inggris" => 100
         ]
     ]
 ];
-?>
+
+// Fungsi untuk menghitung rata-rata nilai
+function tentukanGrade($rata_rata)
+{
+    if ($rata_rata >= 90 && $rata_rata <= 100) {
+        return "A";
+    } elseif ($rata_rata >= 80 && $rata_rata <= 89) {
+        return "B";
+    } elseif ($rata_rata >= 70 && $rata_rata <= 79) {
+        return "C";
+    } elseif ($rata_rata >= 60 && $rata_rata <= 69) {
+        return "D";
+    } elseif ($rata_rata >= 0 && $rata_rata <= 59) {
+        return "E";
+    } else {
+        return "Invalid";
+    }
+}
+
+function hitungRataRata($nilai)
+{
+    $total = array_sum($nilai);
+    $jumlah = count($nilai);
+    $rata_rata = $jumlah > 0 ? $total / $jumlah : 0;
+    return number_format($rata_rata, 2);
+    
+}
